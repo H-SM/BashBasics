@@ -21,6 +21,15 @@ quit(){
 }
 
 hello_here "hello message" hi hsm
+
+function printer() { 
+    local name=$1 # local variable
+    # name=$1 # this isnt a local representation for "name" and will change the global value for "name"
+    echo $name 
+}
+
+printer hsm
+
 quit
 
 echo this is the main part
